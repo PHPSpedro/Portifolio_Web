@@ -4,6 +4,14 @@
     box-sizing: border-box;
     max-width: 100%;
 }
+@supports (-webkit-touch-callout: none) {
+  h2 {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: #d480ff; /* roxo */
+    -webkit-text-stroke: 0px transparent;
+    font-optical-sizing: none; /* desativa o bug */
+  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -143,6 +151,7 @@ span {
 
 h2 {
     font-family: "Bitcount Grid Double Ink", system-ui;
+
 }
 
 #typewriter {
